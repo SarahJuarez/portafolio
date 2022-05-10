@@ -1,3 +1,9 @@
+/* Imports - Tipografía */
+@font-face {
+  font-family: "";
+  src: url(""), format("woff");
+}
+
 /* Reset */
 *,
 *::before,
@@ -38,6 +44,7 @@ picture {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -54,8 +61,8 @@ picture {
   --black: #000000;
   --white: #ffffff;
   /* 2. Tipografía */
-  --font-family-philosopher: "Philosopher", sans-serif;
-  --font-family-roboto: "Roboto", sans-serif;
+  --font-regular: "Lab Grotesque", sans-serif;
+  --font-bold: "Lab Grotesque bold", sans-serif;
   --font-size-1: 1rem;
   --font-size-2: 1.1rem;
   --font-size-3: 1.25rem;
@@ -72,7 +79,7 @@ picture {
 
 /* Base */
 body {
-  font-family: var(--font-family-roboto);
+  font-family: var(--font-regular);
   background-color: var(--white);
   color: var(--black);
 }
@@ -82,15 +89,15 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: var(--font-family-philosopher);
+  font-family: var(--font-bold);
 }
 
 /* Home */
 .home {
-  font-family: Philosopher;
+  font-family:Philosopher;
   font-weight: bold;
   color: #7c7eaa;
-  background: #ffffff;
+  background:#ffffff;
   height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr;
@@ -111,16 +118,17 @@ h5 {
   background-image: url(https://picsum.photos/1200);
   background-size: cover;
   display: grid;
-  background-color: darkgrey;
-  background-blend-mode: lighten;
+ background-color:darkgrey;
+ background-blend-mode: lighten;
 }
 
 .home-intro h2 {
   font-family: Philosopher;
   font-weight: bold;
-  font-size: 7ch;
+  font-size:7ch;
   margin-top: auto;
   padding: 40px;
+
 }
 
 .sobremi {
@@ -146,6 +154,7 @@ h5 {
 .cuadricula {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
   padding: 10%;
 }
 
@@ -153,21 +162,25 @@ h5 {
   font-family: Roboto;
   font-weight: bold;
   font-size: 2ch;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column:1/2;
+  grid-row:1/1;
+  
 }
 
 .cuadricula h3 {
   font-family: Roboto;
   font-weight: light;
   font-size: 1.5ch;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column: 1/2;
+  grid-row: 1/1;
+  margin-top: auto;
+
 }
 
 .cuadricula img {
   object-fit: cover;
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column:2/4;
+  grid-row:1/1;
   padding-left: 20%;
+
 }
