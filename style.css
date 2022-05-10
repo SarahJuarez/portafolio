@@ -3,6 +3,7 @@
   font-family: "";
   src: url(""), format("woff");
 }
+
 /* Reset */
 *,
 *::before,
@@ -43,6 +44,7 @@ picture {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -92,25 +94,89 @@ h5 {
 
 /* Home */
 .home {
-  background: #973d3d9d;
+  font-family:Philosopher;
+  font-weight: bold;
+  color: #7c7eaa;
+  background:#ffffff;
   height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr;
 }
+
 .home nav {
-  border: 1px solid black;
+  border: 1px solid #7c7eaa;
 }
+
 .home nav ul {
   display: flex;
   justify-content: space-around;
   padding: 20px;
 }
+
 .home-intro {
+  margin-top: 10%;
   background-image: url(https://picsum.photos/1200);
   background-size: cover;
   display: grid;
+ background-color:darkgrey;
+ background-blend-mode: lighten;
 }
+
 .home-intro h2 {
+  font-family: Philosopher;
+  font-weight: bold;
+  font-size:7ch;
   margin-top: auto;
   padding: 40px;
+
+}
+
+.sobremi {
+  font-family: Philosopher;
+  font-weight: bold;
+  color: #7c7eaa;
+  background: #ffffff;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.sobremi nav {
+  border: 1px solid #7c7eaa;
+}
+
+.sobremi nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10%;
+}
+
+.cuadricula h2 {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 2ch;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.cuadricula h3 {
+  font-family: Roboto;
+  font-weight: light;
+  font-size: 1.5ch;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.cuadricula img {
+  object-fit: cover;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  padding-left: 20%;
+
 }
