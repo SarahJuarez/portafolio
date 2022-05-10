@@ -1,9 +1,3 @@
-/* Imports - Tipografía */
-@font-face {
-  font-family: "";
-  src: url(""), format("woff");
-}
-
 /* Reset */
 *,
 *::before,
@@ -44,7 +38,6 @@ picture {
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   *,
   *::before,
   *::after {
@@ -61,8 +54,8 @@ picture {
   --black: #000000;
   --white: #ffffff;
   /* 2. Tipografía */
-  --font-regular: "Lab Grotesque", sans-serif;
-  --font-bold: "Lab Grotesque bold", sans-serif;
+  --font-family-philosopher: "Philosopher", sans-serif;
+  --font-family-roboto: "Roboto", sans-serif;
   --font-size-1: 1rem;
   --font-size-2: 1.1rem;
   --font-size-3: 1.25rem;
@@ -79,7 +72,7 @@ picture {
 
 /* Base */
 body {
-  font-family: var(--font-regular);
+  font-family: var(--font-family-roboto);
   background-color: var(--white);
   color: var(--black);
 }
@@ -89,15 +82,15 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: var(--font-bold);
+  font-family: var(--font-family-philosopher);
 }
 
 /* Home */
 .home {
-  font-family:Philosopher;
+  font-family: Philosopher;
   font-weight: bold;
   color: #7c7eaa;
-  background:#ffffff;
+  background: #ffffff;
   height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr;
@@ -118,17 +111,16 @@ h5 {
   background-image: url(https://picsum.photos/1200);
   background-size: cover;
   display: grid;
- background-color:darkgrey;
- background-blend-mode: lighten;
+  background-color: darkgrey;
+  background-blend-mode: lighten;
 }
 
 .home-intro h2 {
   font-family: Philosopher;
   font-weight: bold;
-  font-size:7ch;
+  font-size: 7ch;
   margin-top: auto;
   padding: 40px;
-
 }
 
 .sobremi {
@@ -178,5 +170,4 @@ h5 {
   grid-column-start: 2;
   grid-column-end: 4;
   padding-left: 20%;
-
 }
