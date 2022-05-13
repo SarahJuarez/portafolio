@@ -91,6 +91,15 @@ h4,
 h5 {
   font-family: var(--font-bold);
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+    a:hover {
+      opacity: 0.7
+      ;
+    }
 
 /* Home */
 .home {
@@ -105,6 +114,7 @@ h5 {
 
 .home nav {
   border: 1px solid #7c7eaa;
+
 }
 
 .home nav ul {
@@ -112,6 +122,8 @@ h5 {
   justify-content: space-around;
   padding: 20px;
 }
+.home nav ul li {
+  cursor: pointer;}
 
 .home-intro {
   margin-top: 10%;
@@ -130,6 +142,10 @@ h5 {
   padding: 40px;
 
 }
+.pagenlaqestas{
+    color:#d79dd7;
+  }
+
 
 .sobremi {
   font-family: Philosopher;
@@ -164,7 +180,7 @@ h5 {
   font-size: 2ch;
   grid-column:1/2;
   grid-row:1/1;
-  
+
 }
 
 .cuadricula h3 {
@@ -184,3 +200,35 @@ h5 {
   padding-left: 20%;
 
 }
+
+
+.slider {
+  background:white;
+  display: grid;
+  grid-template-columns: 100vW 100vW 100vW;
+  max-width: vW;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100cW;
+  animation: slider 10s infinite;
+}
+
+@keyframes slider {
+  0% {
+    transform: translatex(0);
+  }
+
+  33% {
+    transform: translatex(-300px);
+  }
+
+  66% {
+    transform: translatex(-600px);
+  }
+
+  100% {
+    transform: translatex(-900px);
+  }
+    }
