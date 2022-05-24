@@ -167,11 +167,18 @@ a{
   padding: 20px;
 }
 
+.contenedor {
+  max-width: 80vw;
+  margin: 10vh auto;
+}
+
 .cuadricula {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  padding: 10%;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(min(100%,320px), 1fr));
+  /* grid-template-rows: auto auto; */
+
+  gap: 40px;
 }
 
 .cuadricula h2 {
