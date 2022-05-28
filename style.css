@@ -181,6 +181,44 @@ a{
   gap: 40px;
 }
 
+.proyecto-individual .cuadricula {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+
+}
+
+.proyecto-individual .cuadricula .info {
+  display: grid;
+    justify-content: center;
+    align-content: center;
+
+
+
+}
+.proyecto-individual .cuadricula > * {
+ flex: 1;
+}
+
+.proyecto-individual .cuadricula .destacada {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-content: center;
+}
+.proyecto-individual .cuadricula .destacada img {
+  grid-column: 1/2;
+  width: 600px;
+}
+.proyecto-individual .cuadricula .destacada .categorias {
+  grid-column: 2/3;
+  display: flex;
+  gap: 2ch;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+
 .cuadricula h2 {
   font-family: Roboto;
   font-weight: bold;
