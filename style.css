@@ -126,14 +126,54 @@ a{
   cursor: pointer;}
 
 .home-intro {
-  margin-top: 10%;
-  background-image: url(https://picsum.photos/1200);
+  /*margin-top: 10%;*/
+ /* background-image: url(https://picsum.photos/1200);*/
   background-size: cover;
   display: grid;
  background-color:darkgrey;
  background-blend-mode: lighten;
 }
 
+.slider {
+  width: 100vw;
+  height: auto;
+  background: url("https://fakeimg.pl/800x400/D1D5DB/D1D5DB");
+  animation: cambiarbg 30s linear infinite;
+}
+
+@keyframes cambiarbg {
+  0% {
+    background: url("https://res.cloudinary.com/dtaugnnta/image/upload/v1652196718/ladanzamockup_sukhhu.png");
+  }
+
+  20% {
+    background: url("https://fakeimg.pl/800x400/FFA000/FFA000");
+  }
+
+  25% {
+    background: url("https://fakeimg.pl/800x400/3F51B5/3F51B5");
+  }
+
+  45% {
+    background: url("https://fakeimg.pl/800x400/AA00FF/AA00FF");
+  }
+
+  50% {
+    background: url("https://fakeimg.pl/800x400/D1D5DB/D1D5DB");
+  }
+
+  70% {
+    background: url("https://fakeimg.pl/800x400/FFA000/FFA000");
+  }
+
+  75% {
+    background: url("https://fakeimg.pl/800x400/512DA8/512DA8");
+  }
+
+  100% {
+    background: url("https://fakeimg.pl/800x400/D1D5DB/D1D5DB");
+  }
+}
 .home-intro h2 {
   font-family: Philosopher;
   font-weight: bold;
@@ -148,6 +188,7 @@ a{
 
 
 .sobremi {
+ 
   font-family: Philosopher;
   font-weight: bold;
   color: #32365d;
@@ -165,6 +206,9 @@ a{
   display: flex;
   justify-content: space-around;
   padding: 20px;
+}
+.sobremi  .cuadricula{
+  padding: 40px;
 }
 
 .contenedor {
